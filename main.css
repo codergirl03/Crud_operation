@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 55px;
+}
+input{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.btn{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.btn_save{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+table{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+th , td{
+    padding: 10px 20px 10px 20px;
+}
+
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+  }
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+th {
+    background-color: black;
+    color: white;
+}
+td div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+td div button{
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+}
+td div i{
+    font-size: 18px;
+    color: white;
+}
+td #edit{
+   background-color: green;
+   cursor: pointer;
+}
+td #delete{
+   background-color: red;
+   cursor: pointer;
+}
+select{
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 10%;
+}
+select option{
+    padding: 7px;
+}
+#search{
+    display: flex;
+    justify-content: center;
+}
+#search input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    width: 50%;
+  }
+  
+  #search button {
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+

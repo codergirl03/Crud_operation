@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    <title>Crud operations</title>
+</head>
+<body>
+    <form action="" id ="userForm">
+        <input type="text" name="name" id="name" placeholder="enter your name">
+        <input type="hidden" name="nameIndex" id="saveNameIndex">
+        <input type="text" name="email" id="email" placeholder="enter your email">
+        <input type="hidden" name="emailIndex" id="saveEmailIndex">
+        <input type="number" name="age" id="age" placeholder="enter your age">
+        <input type="hidden" name="ageIndex" id="saveAgeIndex">
+        <button type="submit" class="btn" id = "addUserBtn">Add User</button>
+        <button type="button" id="saveChanges" class="btn_save">Save User</button>
+         <select name="filter" id="filter">
+             <option value="name">name</option>
+             <option value="email">email</option>
+             <option value="age">age</option>
+         </select>
+    </form>
+
+     <!-- <form id="search" action="">
+        <input type="text" placeholder="Search.." name="search" id="searchUser">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form> -->
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id = "tbody">
+        </tbody>
+    </table>
+
+    <script src="./database.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
