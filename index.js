@@ -100,6 +100,7 @@ saveChanges.onclick = () => {
 }
 
 function deleteUser(index){
+    alert("Are you sure to delete this user ?")
     database.splice(index, 1);
     localStorage.setItem('database', JSON.stringify(database));
     renderUser(database)
